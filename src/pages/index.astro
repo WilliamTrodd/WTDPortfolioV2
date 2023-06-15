@@ -1,24 +1,28 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import Main from '../layouts/main.astro'
+import Hero from '../components/Hero.astro'
+import Nav from '../components/Nav.astro'
+import Skills from '../components/Skills.astro'
+import AboutMe from '../components/AboutMe.astro'
+import SkillBanner from '../components/SkillBanner.astro'
+import Services from '../components/Services.astro'
+import SelectedWorks from '../components/SelectedWorks.astro'
+import Footer from '../components/Footer.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+<Main title='Home'>
+	<div class='h-screen'>
+		<Nav />
+		<Hero />
+	</div>
+	<Skills />
+	<AboutMe />
+	<SkillBanner />
+	<Services />
+	<SelectedWorks />
+	<Footer />
+</Main>
+<script>
+	import '../scripts/starmap.ts'
+</script>

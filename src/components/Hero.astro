@@ -1,0 +1,23 @@
+---
+import { ArrowDown } from 'astro-feather-icons'
+import Nav from './Nav.astro'
+---
+
+<div class='flex flex-col'>
+  <div class='h-screen grow bg-[#11111] relative' id='canvas-container'>
+    <canvas id='canvas' class='absolute -z-50'></canvas>
+    <div class='z-50 flex flex-col h-full justify-end mx-12'>
+      <h1 class='lg:text-hero text-6xl w-1/2 lg:w-1/4'>William Trodd</h1>
+      <p class='w-1/2 lg:1/4 text-gray-300 font-extralight'>
+        Hello, my name is William Trodd, I'm a web developer. Welcome to my
+        personal portfolio.
+      </p>
+      <div class='mx-auto my-24'>
+        <ArrowDown
+          class='w-16 h-16'
+          color='rgb(209 213 219 / var(--tw-text-opacity))'
+        />
+      </div>
+    </div>
+  </div>
+</div>

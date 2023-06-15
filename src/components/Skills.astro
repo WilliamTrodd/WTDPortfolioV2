@@ -1,0 +1,16 @@
+---
+const skills = ['Typescript', 'MongoDB', 'Node.js', 'Vue', 'Astro']
+---
+
+<div class='flex flex-col m-20'>
+  <h2 class='text-green-text text-center mb-4'>My skills</h2>
+  <div
+    class='grid grid-rows-1 grid-cols-5 text-gray-400 justify-center divide-x-[1px] border-gray-500 divide-gray-500 border-[1px]'
+  >
+    {
+      skills.map((skill) => (
+        <div class='font-light py-4 lg:py-8 text-center'>{skill}</div>
+      ))
+    }
+  </div>
+</div>

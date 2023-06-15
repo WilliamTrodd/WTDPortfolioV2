@@ -1,0 +1,28 @@
+---
+import AboutMeStats from './AboutMeStats.astro'
+import Button from './Button.astro'
+---
+
+<div class='flex flex-col mx-20 mb-20'>
+  <div class='flex flex-col w-1/2'>
+    <h3 class='text-green-500 tracking-wide'>About Me</h3>
+    <p class='text-gray-400'>
+      I'm a JS developer seeking a role in Climate or EdTech.
+    </p>
+    <Button href='mailto:william.trodd@gmail.com' text='Hire me!' />
+  </div>
+  <div class='flex flex-col items-end'>
+    <p class='text-sm font-extralight w-1/2'>
+      Hi, I'm William. I have a background in Environmental Science and Computer
+      Science education. I have developed a range of software, from a clone of
+      Discord, to a private tutoring platform. I prefer to work with Vue but I
+      am comfortable with React, Astro and SolidJS. I enjoy Frontend work but
+      find Backend work more rewarding.
+    </p>
+    <div class='w-1/2 flex justify-between'>
+      <AboutMeStats number='29' text='Github repos' />
+      <AboutMeStats number='3' text='Ongoing projects' />
+      <AboutMeStats number='2' text='Years experience' />
+    </div>
+  </div>
+</div>
